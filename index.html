@@ -49,6 +49,18 @@
             <p style="width: 100%; text-align: right">James Turnbull</p>
             <p style="width: 100%; text-align: right">@kartar</p>
           </div>
+
+          <aside class="notes">
+
+       * Crash course in software lifecycles and the traps they create
+       * Build a dev environment - document it
+       * Run the tests
+       * Spelunking legacy code bases
+       * Modeling, profiling and tracing
+       * Reverse documentation
+       * Tests, testing and statistics
+       * Avoiding curses, rolling boulders and snakes
+          </aside>
         </section>
 
         <section>
@@ -61,7 +73,6 @@
           <ul>
             <li> engineer and operations chap
             <li> open source chap
-            <li> erstwhile Ruby chap
             <li> funny accent
           </ul>
 
@@ -102,7 +113,7 @@
           <h2> The Docker Book </h2>
 
           <div>
-            <a href="http://www.dockerbook.com"><img alt="docker book" src="images/dcover.png" class="plain" style="text-align: center; height: 400px"></a>
+            <a href="http://www.dockerbook.com"><img alt="docker book" src="images/cover.png" class="plain" style="text-align: center; height: 400px"></a>
           </div>
 
           <h3><a href="http://www.dockerbook.com">www.dockerbook.com</a></h3>
@@ -110,18 +121,14 @@
 
         <section>
           <h1>Three themes</h1>
-          <h2>A little bit of culture</h2>
+          <h2>A bit of culture</h2>
           <h2>Some things about community</h2>
-          <h2>Quite a lot about code</h2>
+          <h2>Quite a lot about code, documentation and tests</h2>
         </section>
 
         <section>
-          <h1>But I thought this talk was technical?</h1>
+          <h1>But I thought this talk was just technical?</h1>
           <h2>Or ... <br />Why do I give a crap about culture and community?</h2>
-        </section>
-
-        <section>
-            <h1>You can't make friends with salad!</h1>
         </section>
 
         <section>
@@ -130,7 +137,14 @@
         </section>
 
         <section>
-          <h2>What's culture</h2>
+          <h2>What's culture?</h2>
+          <h2>Why is culture important?</h2>
+        </section>
+
+        <section>
+          <h2>Read</h2>
+          <h2>Listen</h2>
+          <h2>Empathize</h2>
         </section>
 
         <section>
@@ -140,18 +154,170 @@
 
        <section>
          <h2>Communication</h2>
+         <h3>Use the mechanisms the project use</h3>
+         <h3>Ask questions</h3>
+         <h3>Over-share</h3>
+         <h3>Be polite, be upbeat</h3>
        </section>
 
        <section>
-          <h1>Code</h1>
+         <h2>Collaboration</h2>
+         <h3>Earn trust through little steps</h3>
+         <h3>Ask for help</h3>
+         <h3>Use the tools the project uses</h3>
+       </section>
+
+       <section>
+         <h1>But it's broken!</h1>
+       </section>
+
+       <section>
+         <h1>You catch more flies with honey</h1>
+         <img alt="code" src="images/honey.jpg" class="plain" style="text-align: center; height: 400px">
+       </section>
+
+       <section>
+          <h1>Code, Documentation and Tests</h1>
           <img alt="code" src="images/Binary_Code.jpg" class="plain" style="text-align: center; height: 400px">
        </section>
 
        <section>
          <h1>What is Software Archaeology?</h1>
+
+         <h2>The fine art of software dumpster diving</h2>
        </section>
 
+       <section>
+         <h3>Documentation</h3>
+         <h3>Visualization</h3>
+         <h3>Testing &amp; Truth</h3>
+         <h3>Design &amp; Style</h3>
+         <h3>Performance</h3>
+       </section>
 
+       <section>
+         <h1>Read all the documentation</h1>
+       </section>
+
+       <section>
+         <h1>Run all the documentation</h1>
+       </section>
+
+       <section>
+         <h1>(Re-)Write documentation</h1>
+
+         <aside class="notes">
+           Tell the story of starting with Puppet and emailing Luke every 10 minutes
+         </aside>
+       </section>
+
+       <section>
+         <h1>Is there a design?</h1>
+       </section>
+
+       <section>
+         <h1>Draw pictures and write down the story</h1>
+       </section>
+
+       <section>
+         <img alt="docker arch" src="images/dockerarch.png" class="plain" style="text-align: center; height: 400px">
+       </section>
+
+       <section>
+         <h1>Build a development environment</h1>
+
+         <h3 class="fragment">And yes document it.</h3>
+       </section>
+
+       <section>
+         <h1>Run the tests</h1>
+       </section>
+
+       <section>
+         <h1>Fix the broken tests</h1>
+       </section>
+
+       <section>
+         <h1>You fixed the tests?</h1>
+         <img alt="happykids" src="images/happykids.jpg" class="plain" style="text-align: center; height: 400px">
+       </section>
+
+       <section>
+         <h1>What do the tests cover?</h1>
+       </section>
+
+       <section>
+          <pre><code data-trim style="font-size: 200%; line-height:105%">
+            # go test -cover
+PASS
+coverage: 9.7% of statements
+ok    github.com/dotcloud/docker  0.444s
+          </code></pre>
+       </section>
+
+       <section>
+          <img alt="coverage" src="images/coverage.png" class="plain" style="text-align: center; height: 400px">
+       </section>
+
+       <section>
+         <h1>Wow do we suck</h1>
+       </section>
+
+       <section>
+         <h1>Write new tests</h1>
+       </section>
+
+       <section>
+         <h1>Tests as documentation</h1>
+       </section>
+
+       <section>
+         <h1>Run Metrics</h1>
+       </section>
+
+       <section>
+         <img alt="metrics" src="images/rubyfu.png" class="plain" style="text-align: center; height: 400px">
+       </section>
+
+       <section>
+         <h1>Metrics reveal:</h1>
+         <h3>Code smells</h3>
+         <h3>Troubled subsystems</h3>
+         <h2 class="fragment">All good places to start coding</h2>
+       </section>
+
+       <section>
+         <h1>Style * Linting</h1>
+       </section>
+
+       <section>
+        <p>stop sign logo? Little things matter. Often signs of bigger problems</p>
+       </section>
+
+       <section>
+         <pre><code data-trim style="font-size: 200%; line-height:105%">
+           # go tool vet .
+commands.go:567: arg s for printf verb %d of wrong type: os.Signal
+engine/streams_test.go:168: arg expectedOutput for printf verb %d of wrong type: []string
+engine/streams_test.go:228: possible formatting directive in Fatal call
+graphdriver/aufs/aufs_test.go:389: arg change.Kind for printf verb %s of wrong type: github.com/dotcloud/docker/archive.ChangeType
+graphdriver/aufs/aufs_test.go:429: arg change.Kind for printf verb %s of wrong type: github.com/dotcloud/docker/archive.ChangeType
+graphdriver/devmapper/deviceset.go:35: struct field tag `json:devices` not compatible with reflect.StructTag.Get
+         </code></pre>
+       </section>
+
+       <section>
+         <h1>Profiling</h1>
+       </section>
+
+       <section>
+         <h1>Contribution earns trust</h1>
+         <h1 class="fragment">Trust is the basis of community</h1>
+       </section>
+
+       <section>
+         <img alt="trusthappy" src="images/???.png" class="plain" style="text-align: center; height: 400px">
+       </section>
 
        <section>
           <h1>Questions?</h1>
@@ -164,6 +330,8 @@
             <li> <a href="http://anthro.ucsc.edu/images/20091205_CLWHD_arch_dig_0255.jpg">Dig image Copyright University of California Santa Cruz 2009</a></li>
             <li> <a href="http://www.ng.total.com/06_total_nigeria_press/0607_30May2013_features.htm">Culture image Copyright Charles Ebereonwu</a></li>
             <li> <a href="http://www.flickr.com/photos/storm-crypt/3452097382">Community image Copyright Storm Crypt</a></li>
+            <li> <a href="http://www.flickr.com/photos/kentwang/809338902">Flies and Honey image</a></li>
+            <li> <a href="http://www.flickr.com/photos/58648496@N02/5380522396/">Happy Kids image</a></li>
           </ul>
 
        </section>
