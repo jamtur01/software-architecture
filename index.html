@@ -49,17 +49,6 @@
             <p style="width: 100%; text-align: right">James Turnbull</p>
             <p style="width: 100%; text-align: right">@kartar</p>
           </div>
-
-          <aside class="notes">
-       * Crash course in software lifecycles and the traps they create
-       * Build a dev environment - document it
-       * Run the tests
-       * Spelunking legacy code bases
-       * Modeling, profiling and tracing
-       * Reverse documentation
-       * Tests, testing and statistics
-       * Avoiding curses, rolling boulders and snakes
-          </aside>
         </section>
 
         <section>
@@ -88,17 +77,6 @@
         </section>
 
         <section>
-          <h2> books </h2>
-
-          <ul style="list-style-type:none;">
-            <li> <a href="http://www.amazon.com/gp/product/1430230576/ref=as_li_ss_tl?ie=UTF8&tag=puppet0e-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1430230576">Pro Puppet</a>
-            <li> <a href="http://www.amazon.com/gp/product/1430219122?ie=UTF8&tag=puppet0e-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1430219122">Pro Linux System Administration</a>
-            <li> <a href="http://www.amazon.com/gp/product/1590596099?ie=UTF8&tag=puppet0e-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1590596099">Pro Nagios 2.0</a>
-            <li> <a href="http://www.amazon.com/gp/product/1590594444?ie=UTF8&tag=puppet0e-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1590594444">Hardening Linux</a>
-           </ul>
-        </section>
-
-        <section>
           <h2> The LogStash Book </h2>
 
           <div>
@@ -116,6 +94,15 @@
           </div>
 
           <h3><a href="http://www.dockerbook.com">www.dockerbook.com</a></h3>
+        </section>
+
+
+        <section>
+          <h1>Who are you?</h1>
+        </section>
+
+        <section>
+          <h1>Why?</h1>
         </section>
 
         <section>
@@ -141,9 +128,8 @@
         </section>
 
         <section>
-          <h2>Read</h2>
-          <h2>Listen</h2>
-          <h2>Empathize</h2>
+          <h2>Read &amp; Listen</h2>
+          <h2>Patience is a virtue</h2>
         </section>
 
         <section>
@@ -162,8 +148,6 @@
        <section>
          <h2>Collaboration</h2>
          <h3>Earn trust through little steps</h3>
-         <h3>Ask for help</h3>
-         <h3>Use the tools the project uses</h3>
        </section>
 
        <section>
@@ -192,6 +176,8 @@
          <h3>Testing &amp; Truth</h3>
          <h3>Design &amp; Style</h3>
          <h3>Performance</h3>
+
+         <aside class="notes">Explain I am going to use Puppet and Docker as examples</aside>
        </section>
 
        <section>
@@ -276,6 +262,16 @@ ok    github.com/dotcloud/docker  0.444s
 
        <section>
          <h1>Run Metrics</h1>
+         
+         <aside class="notes"> Style violations help complete the picture of
+         the inherited code. Many developers argue that static code audits
+         should be run first, and this is true from a new project perspective.
+         However, when inheriting massive amounts of code, running metrics
+         first usually gives more object health-based information. Once the
+         health of the object design is determined and can point to various
+         areas of the code that need significant work, the audits can further
+         refine that knowledge.  </aside>
+
        </section>
 
        <section>
@@ -283,18 +279,18 @@ ok    github.com/dotcloud/docker  0.444s
        </section>
 
        <section>
-         <h1>Metrics reveal:</h1>
+         <h1>Metrics reveal</h1>
          <h3>Code smells</h3>
          <h3>Troubled subsystems</h3>
          <h2 class="fragment">All good places to start coding</h2>
        </section>
 
        <section>
-         <h1>Style * Linting</h1>
+         <h1>Style &amp; Linting</h1>
        </section>
 
        <section>
-        <p>stop sign logo? Little things matter. Often signs of bigger problems</p>
+         <img alt="little things" src="images/notice-the-little-things.jpg" class="plain" style="text-align: center; height: 400px">
        </section>
 
        <section>
@@ -315,7 +311,7 @@ graphdriver/devmapper/deviceset.go:35: struct field tag `json:devices` not compa
 
        <section>
          <pre><code data-trim style="font-size: 200%; line-height:105%">
-          # go tool pprof api ai.prof
+          # go tool pprof api api.prof
 Welcome to pprof!  For help, type 'help'.
 (pprof) top10
 Total: 2525 samples
@@ -328,12 +324,24 @@ Total: 2525 samples
        </section>
 
        <section>
-         <h1>Contribution earns trust</h1>
-         <h1 class="fragment">Trust is the basis of community</h1>
+         <h1>Performance problems are often tied to code smells</h1>
        </section>
 
        <section>
-         <img alt="trusthappy" src="images/???.png" class="plain" style="text-align: center; height: 400px">
+         <h1>So what have we learnt?</h1>
+       </section>
+
+       <section>
+         <h1>Understand all of culture, community and code</h1>
+       </section>
+
+       <section>
+         <h1>Little things can have big impacts</h1>
+         <img alt="trusthappy" src="images/trusthappy.jpg" class="plain" style="text-align: center; height: 400px">
+       </section>
+
+       <section>
+         <h1>Leave things better than you found them.</h1>
        </section>
 
        <section>
@@ -344,12 +352,12 @@ Total: 2525 samples
           <h2> references </h2>
 
           <ul>
-            <li> <a href="http://anthro.ucsc.edu/images/20091205_CLWHD_arch_dig_0255.jpg">Dig image Copyright University of California Santa Cruz 2009</a></li>
-            <li> <a href="http://www.ng.total.com/06_total_nigeria_press/0607_30May2013_features.htm">Culture image Copyright Charles Ebereonwu</a></li>
-            <li> <a href="http://www.flickr.com/photos/storm-crypt/3452097382">Community image Copyright Storm Crypt</a></li>
-            <li> <a href="http://www.flickr.com/photos/kentwang/809338902">Flies and Honey image</a></li>
-            <li> <a href="http://www.flickr.com/photos/58648496@N02/5380522396/">Happy Kids image</a></li>
-            <li> <a href="http://www.flickr.com/photos/35758111@N00/3423759143/">A Picture is worth a thousand words Copyright Jessica Hemrick</a></li>
+            <li> <a href="http://anthro.ucsc.edu/images/20091205_CLWHD_arch_dig_0255.jpg">Dig - Copyright University of California Santa Cruz 2009</a></li>
+            <li> <a href="http://www.ng.total.com/06_total_nigeria_press/0607_30May2013_features.htm">Culture - Copyright Charles Ebereonwu</a></li>
+            <li> <a href="http://www.flickr.com/photos/storm-crypt/3452097382">Community - Copyright Storm Crypt</a></li>
+            <li> <a href="http://www.flickr.com/photos/kentwang/809338902">Flies and Honey - Copyright Kent Wang</a></li>
+            <li> <a href="http://www.flickr.com/photos/58648496@N02/5380522396/">Happy Kids - Copyright Lighttruth</a></li>
+            <li> <a href="http://www.flickr.com/photos/35758111@N00/3423759143/">A Picture is worth a thousand words - Copyright Jessica Hemrick</a></li>
           </ul>
 
        </section>
